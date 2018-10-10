@@ -10,5 +10,5 @@ CREATE TABLE `{#}horoscope` (
   UNIQUE KEY `record` (`name`,`plan`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `{#}widgets`(, `controller`, `name`, `title`, `author`, `url`, `version`, `is_external`, `files`, `addon_id`) VALUES ('horoscope', 'default', 'Гороскоп', 'myInstantCMS Team', 'https://myinstantcms.ru', '0.1.0', 1, NULL, NULL);
+INSERT INTO `{#}widgets`(`controller`, `name`, `title`, `author`, `url`, `version`, `is_external`, `files`, `addon_id`) VALUES ('horoscope', 'default', 'Гороскоп', 'myInstantCMS Team', 'https://myinstantcms.ru', '0.1.0', 1, NULL, NULL);
 INSERT INTO `{#}scheduler_tasks`(`title`, `controller`, `hook`, `period`, `is_strict_period`, `date_last_run`, `is_active`, `is_new`) VALUES ('Обновление гороскопа', 'horoscope', 'refresh', 1440, 1, '2018-10-10 16:42:00', NULL, 0);
